@@ -1,0 +1,41 @@
+<theme>
+    <formatVersion>4</formatVersion>
+    <include>./../pipboy.xml</include>
+
+	<view name="system">
+
+		<image name="SystemBackground" extra="true">
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./../misc/image/bg.png</path>
+		</image>
+				
+		<image name="logo">
+			<path>./logo.png</path>
+        </image>
+		
+		
+	</view>
+
+	<view name="basic, detailed, video">
+		<sound name="launch">
+			<path>./../misc/sound/startgame.wav</path>
+		</sound>
+		
+				
+		<image name="md_marquee" extra="true">
+			<origin>0.0 0.0</origin>
+			<pos>0.0 0.0</pos>
+			<maxSize>0.0 0.0</maxSize>
+		</image>
+	</view>
+
+	<view name="basic">		
+	</view>
+
+	<view name="detailed">
+	</view>
+	
+</theme>

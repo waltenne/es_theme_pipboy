@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Theme: PIP-BOY
+version: 1.0
+Author: Waltenne Carvalho
+
+-->
+<theme>
+    <formatVersion>4</formatVersion>
+<!-- Helpsystem menu all views //-->
+	<view name="system, basic, detailed, video">
+
+		<helpsystem name="help">
+			<textColor>00ff62</textColor>
+			<fontPath>./misc/font/mono.TTF</fontPath>
+			<fontSize>0.03</fontSize>
+			<pos>0.030 0.942</pos>
+			<iconColor>00ff62</iconColor>
+		</helpsystem>
+	
+	</view>
+	
+	<view name="system">
+	</view>
+<!-- End Helpsystem menu all views //-->
+<!-- Carousel Feature //-->		
+	<feature supported="carousel">
+		<view name="system">			
+			<carousel name="systemcarousel">
+				<type>horizontal</type>
+				<color>00000000</color>
+				<logoScale>1.9</logoScale>
+                <logoSize>0.15625 0.097222222222222</logoSize>
+				<maxLogoCount>1</maxLogoCount>
+			</carousel>			
+			<!-- No declare System LOGO here -->
+
+			<!-- Games number -->
+			<text name="systemInfo">
+				<backgroundColor>000000</backgroundColor>
+				<color>00ff62</color>
+				<fontPath>./misc/font/mono.TTF</fontPath>
+				<fontSize>0.03</fontSize>
+				<pos>0.780 0.952</pos>
+				<size>0.165 0.001</size>
+			</text>			
+			<image name="system-background" extra="true">
+				<pos>0.600 0.700</pos>
+				<path>./misc/image/white.png</path>
+				<color>00ff62</color>
+         </image>
+			<sound name="systemscroll">
+		          <path>./misc/sound/systemscroll.wav</path>
+			</sound>
+			 <text name="logoText">
+				 <pos>1 1</pos>
+            <forceUppercase>true</forceUppercase>
+         </text>
+				
+				
+		</view>	
+	</feature>	
+
+<!-- End Carousel Feature //-->	
+<!-- Background & Gamelist All Views //-->		
+	<view name="basic, detailed, video">
+	
+		<text name="logoText">
+			 <pos>1 1</pos>
+			 <zIndex>50</zIndex>	
+        </text>
+		<image name="background">
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./misc/image/bg.png</path>	
+		</image>
+		
+		<video name="md_video">
+		    <delay>0.0</delay>
+			<default>./misc/video/static.mp4</default>
+            <showSnapshotNoVideo>false</showSnapshotNoVideo>
+            <showSnapshotDelay>false</showSnapshotDelay>
+		</video>
+		
+		<textlist name="gamelist">			
+			<selectorColor>00ff62</selectorColor>
+			<selectedColor>00ff62</selectedColor>			
+			<primaryColor>027020</primaryColor>
+			<fontPath>./misc/font/mono.TTF</fontPath>
+			<pos>0.0225 0.100</pos>
+		    <size>0.300 0.800</size> 
+			<lineSpacing>1.0</lineSpacing>
+			<alignment>left</alignment>
+			<horizontalMargin>0.0150</horizontalMargin>
+			<fontSize>0.03</fontSize>		
+			<scrollSound>./misc/sound/scroll.wav</scrollSound>	
+			<selectorImagePath>./misc/image/bg_gamelist.png</selectorImagePath>					
+		</textlist>
+		
+		<image name="help-random" extra="true">
+			<origin>1 0.5</origin>
+			<pos>0.979166666666667 0.041666666666667</pos>
+		</image>
+      
+      <image name="md_image">
+         <origin>0.5 0</origin>
+         <pos>0.3 0.1625</pos>	
+      </image>
+	        
+   </view>
+<!-- End Background & Gamelist All Views //-->
+<!-- View Specific Image Placement //-->
+	<view name="basic">
+	</view>	
+	
+	<view name="detailed">
+
+				<!-- GAME COVER //-->
+				
+		<image name="md_image">
+				<pos>0.818 0.724</pos>
+				<origin>0.5 0.5</origin>
+		</image>
+
+	</view>
+	
+	<feature supported="video">
+	
+		<view name="video">
+				
+				<!-- VIDEO PREVIEW //-->
+					
+			<video name="md_video">
+				<pos>0.818 0.724</pos>
+				<maxSize>0.311 0.387</maxSize>
+				<origin>0.5 0.5</origin>
+				<showSnapshotNoVideo>false</showSnapshotNoVideo>
+				<showSnapshotDelay>false</showSnapshotDelay>
+			</video>		
+
+				<!-- GAME COVER //-->
+				
+			<image name="md_image">
+				<maxSize>0.311 0.387</maxSize>
+				<pos>0.817 0.305</pos>				
+				<origin>0.5 0.5</origin>
+			</image>
+		</view>
+			
+				<!-- GAME MARQUEE //-->		
+			<image name="md_marquee" extra="true">
+				<origin>0.0 0.0</origin>
+				<pos>0.0 0.0</pos>
+			</image>
+	</feature>
+<!-- End View Specific Image Placement  //-->
+
+	<view name="detailed, video">
+		<text name="md_lbl_genre, md_genre, md_lbl_rating, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_playcount, md_playcount, md_lbl_lastplayed,md_lbl_players,md_players,md_lbl_releasedate,md_lbl_genre,md_genre,md_description, md_players, md_lbl_favorite, md_favorite">
+			<pos>1 1</pos>	
+		</text>
+		<rating name="md_rating">
+			<pos>1 1</pos>
+		</rating>
+      <datetime name="md_lastplayed">
+         <pos>1 1</pos>	
+      </datetime>
+      <text name="md_lbl_releasedate">
+         <pos>1 1</pos>	
+      </text>
+      <datetime name="md_releasedate">
+         <pos>1 1</pos>	
+      </datetime>
+	</view>
+	
+		<feature supported="z-index">
+	
+		<view name="basic, detailed, video">		
+		<image name="background_gamelist" extra="true">
+			<zIndex>20</zIndex>
+		</image>
+		</view>		
+		</feature>
+	
+</theme>
