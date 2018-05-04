@@ -2,6 +2,12 @@
 es_theme_pipboy
 Emulationstation / Retropie Theme based on Fallout
 
+License
+
+This theme is being actively developed, a great deal of work has been put into the theme and art so please do not use the graphics I have created in other projects.
+You are free to modify the theme for your personal use only - please do not share modified versions of this theme.
+Commercial distribution is prohibited
+
 This theme has been developed, through many research and ideas obtained as much as in the official forum of retropie and in facebook groups The idea of this theme is something cleaner, without much information. I kept on the game selection screen only the cover of the game, the preview in video and selection list
 
 At first, this topic was a test on my part, I used several guides on the internet to build it. As I saw that something was really cool, I made my image on raspberry pi using this theme and among other modifications
